@@ -44,7 +44,7 @@ public class ArabicRomanCalculator {
 
     }
     private static class numbersTypeConverter {
-        public static final String[] romeNums = {
+        public static final String[] romeNumbers = {
                 "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
                 "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX",
                 "XXI", "XXII", "XXIII", "XXIV", "XXV", "XXVI", "XXVII", "XXVIII", "XXIX", "XXX",
@@ -58,7 +58,7 @@ public class ArabicRomanCalculator {
 
         public static boolean numIsArabicOr(String number) {               //число римское или арабское?
 
-            for (String num : romeNums) {
+            for (String num : romeNumbers) {
                 if (number.equals(num)) {
                     return false;
                 }
@@ -68,8 +68,8 @@ public class ArabicRomanCalculator {
 
         public static int romanArabicConverter(String romeNum) {             //из римских в арабские
             int result = 0;
-            for (int i = 0; i < romeNums.length; i++) {
-                if (romeNum.equals(romeNums[i])) {
+            for (int i = 0; i < romeNumbers.length; i++) {
+                if (romeNum.equals(romeNumbers[i])) {
                     result = i + 1;
                     break;
                 }
@@ -79,7 +79,7 @@ public class ArabicRomanCalculator {
 
 
         public static String romanArabicConverter(int arabicNum) {          // из арабских в римские
-            return romeNums[arabicNum - 1];
+            return romeNumbers[arabicNum - 1];
 
         }
     }
