@@ -1,5 +1,5 @@
 package CodeWarsTasks;
-
+/*** reverse from 123 to 321 */
 public class Task1 {
     public static void main(String[] args) {
         System.out.println(testSort(123456789));

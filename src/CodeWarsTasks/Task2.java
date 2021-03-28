@@ -1,4 +1,6 @@
 package CodeWarsTasks;
+/*** Your task is to write a function which returns the sum of following series upto nth term(parameter).
+ * example: SeriesSum(5) => 1 + 1/4 + 1/7 + 1/10 + 1/13 = "1.57" */
 
 public class Task2 {
     public static void main(String[] args) {
@@ -6,7 +8,6 @@ public class Task2 {
     }
 
     public static String seriesSum(int n) {
-        // Happy Coding ^_^
 
         double result = 1.0;
         double a = 1.0;
