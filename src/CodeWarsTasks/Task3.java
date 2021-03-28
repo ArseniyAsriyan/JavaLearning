@@ -18,8 +18,8 @@ public class Task3 {
 
     public static long findNb(long m) {
         // your code
-        long result = 0l;
-        long incr = 0l;
+        long result = 0L;
+        long incr = 0L;
         while(result < m) {
             result += Math.pow(incr + 1, 3);
             incr++;
