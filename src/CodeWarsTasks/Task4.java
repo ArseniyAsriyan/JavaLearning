@@ -19,5 +19,7 @@ public class Task4 {
         }
 
         return summ;
+
+        // or just "return n * (n + 1) / 2;" but who knows about this math shit...
     }
 }
