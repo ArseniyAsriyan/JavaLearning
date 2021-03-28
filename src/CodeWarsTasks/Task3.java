@@ -18,14 +18,14 @@ public class Task3 {
 
     public static long findNb(long m) {
         // your code
-        long result = 0L;
-        long incr = 0L;
-        while(result < m) {
-            result += Math.pow(incr + 1, 3);
-            incr++;
+        long volume = 0L;
+        long amount = 0L;
+        while(volume < m) {
+            volume += Math.pow(amount + 1, 3);
+            amount++;
         }
-        if (result == m) {
-            return incr;
-        } else return -1;
+
+        amount = (volume == m) ? amount : -1;
+        return amount;
     }
 }
